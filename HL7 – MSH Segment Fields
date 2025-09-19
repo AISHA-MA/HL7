@@ -1,0 +1,22 @@
+| **Position** | **Field**                        | **الوصف (بالعربي)**                                       | **مثال**                    |    |    |
+| ------------ | -------------------------------- | --------------------------------------------------------- | --------------------------- | -- | -- |
+| MSH-1        | Field Separator                  | الفاصل الأساسي بين الحقول. غالباً بيكون \`                | \`                          | \` | \` |
+| MSH-2        | Encoding Characters              | الأحرف المستخدمة للفصل داخل الرسالة (عادة `^~\&`).        | `^~\&`                      |    |    |
+| MSH-3        | Sending Application              | اسم أو معرف التطبيق المرسل.                               | `LabSystem`                 |    |    |
+| MSH-4        | Sending Facility                 | اسم/معرف المنشأة المرسلة.                                 | `HospitalA`                 |    |    |
+| MSH-5        | Receiving Application            | اسم التطبيق المستقبل.                                     | `EMRSystem`                 |    |    |
+| MSH-6        | Receiving Facility               | المنشأة المستقبلة.                                        | `ClinicB`                   |    |    |
+| MSH-7        | Date/Time of Message             | وقت وتاريخ إنشاء الرسالة.                                 | `20250101083000`            |    |    |
+| MSH-8        | Security                         | معلومات أمنية أو Authorization (نادراً تُستخدم).          | `TOKEN123`                  |    |    |
+| MSH-9        | Message Type                     | نوع الرسالة (مثال: `ADT^A01` = Admit/Visit Notification). | `ORM^O01`                   |    |    |
+| MSH-10       | Message Control ID               | رقم معرف فريد للرسالة عشان التتبع.                        | `123456`                    |    |    |
+| MSH-11       | Processing ID                    | نوع المعالجة: `D` (Debug), `T` (Test), `P` (Production).  | `P`                         |    |    |
+| MSH-12       | Version ID                       | نسخة معيار HL7 المستخدمة.                                 | `2.5`                       |    |    |
+| MSH-13       | Sequence Number                  | رقم تسلسلي للرسالة (اختياري).                             | `1`                         |    |    |
+| MSH-14       | Continuation Pointer             | لو الرسالة طويلة وانقسمت على عدة أجزاء.                   | `CONT123`                   |    |    |
+| MSH-15       | Accept Acknowledgment Type       | نوع رسالة التأكيد المطلوبة عند الاستلام.                  | `AL` (Always), `NE` (Never) |    |    |
+| MSH-16       | Application Acknowledgment Type  | نوع الـ Acknowledgment المتوقع من التطبيق.                | `ER` (Error only)           |    |    |
+| MSH-17       | Country Code                     | كود الدولة (اختياري).                                     | `SDN`                       |    |    |
+| MSH-18       | Character Set                    | نوع الترميز المستخدم للنصوص (مثلاً UTF-8).                | `UNICODE UTF-8`             |    |    |
+| MSH-19       | Principal Language of Message    | اللغة الأساسية للرسالة.                                   | `EN`                        |    |    |
+| MSH-20       | Alternate Character Set Handling | كيف يتم التعامل مع Character Sets البديلة.                | `ISO2022-1994`              |    |    |

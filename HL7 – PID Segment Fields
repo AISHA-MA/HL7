@@ -1,0 +1,23 @@
+| **Position** | **Field**                | **الوصف (بالعربي)**                                      | **مثال**               |
+| ------------ | ------------------------ | -------------------------------------------------------- | ---------------------- |
+| PID-1        | Set ID                   | رقم تسلسلي للـ PID في الرسالة (إذا في أكثر من واحد).     | `1`                    |
+| PID-2        | Patient ID (External ID) | رقم تعريف المريض الخارجي (قد يكون رقم ملف أو نظام آخر).  | `12345`                |
+| PID-3        | Patient Identifier List  | قائمة بالمعرفات المختلفة للمريض (MRN, National ID…).     | `MRN12345^NHS^SD`      |
+| PID-4        | Alternate Patient ID     | معرف بديل للمريض (اختياري).                              | `ALT5678`              |
+| PID-5        | Patient Name             | اسم المريض (Family^Given^Middle^Suffix^Prefix).          | `Ahmed^Aisha^Mamoun`   |
+| PID-6        | Mother’s Maiden Name     | اسم الأم قبل الزواج (اختياري).                           | `Mohamed`              |
+| PID-7        | Date/Time of Birth       | تاريخ ميلاد المريض.                                      | `19900101`             |
+| PID-8        | Administrative Sex       | الجنس: `M` = ذكر، `F` = أنثى، `U` = غير معروف.           | `F`                    |
+| PID-9        | Patient Alias            | أسماء مستعارة أو ألقاب (اختياري).                        | `Aisha M.`             |
+| PID-10       | Race                     | العرق أو الأصل العرقي (اختياري).                         | `SDN`                  |
+| PID-11       | Patient Address          | عنوان المريض (Street^City^State^Zip^Country).            | `Khartoum^KH^12345^SD` |
+| PID-12       | County Code              | كود المقاطعة أو المحافظة (اختياري).                      | `KH`                   |
+| PID-13       | Phone Number – Home      | رقم الهاتف المنزلي.                                      | `+249912345678`        |
+| PID-14       | Phone Number – Business  | رقم الهاتف العمل (اختياري).                              | `+249912345679`        |
+| PID-15       | Primary Language         | اللغة الأساسية للمريض.                                   | `AR`                   |
+| PID-16       | Marital Status           | الحالة الاجتماعية: `S`=Single, `M`=Married, `D`=Divorced | `M`                    |
+| PID-17       | Religion                 | الديانة (اختياري).                                       | `Islam`                |
+| PID-18       | Patient Account Number   | رقم الحساب الخاص بالمريض (اختياري).                      | `ACC12345`             |
+| PID-19       | SSN Number – Patient     | رقم الهوية الوطنية أو الرقم القومي (اختياري).            | `123456789`            |
+| PID-20       | Driver’s License Number  | رقم رخصة القيادة (اختياري).                              | `DL987654`             |
+| PID-21       | Mother’s Identifier      | معرف الأم (اختياري).                                     | `MOTHER123`            |
